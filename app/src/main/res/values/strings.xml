@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FIx Your Day</string>
+    <string name="new_schedule">Add new Schedule</string>
 </resources>
