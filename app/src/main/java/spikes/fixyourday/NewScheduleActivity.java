@@ -18,8 +18,8 @@ public class NewScheduleActivity extends AppCompatActivity {
         r.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(this, DisplayMessageActivity.class);
-                Toast.makeText(null, "Hello", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent (getApplicationContext(), CreateNewScheduleActivity.class);
+                startActivity(intent);
             }
         });
     }
