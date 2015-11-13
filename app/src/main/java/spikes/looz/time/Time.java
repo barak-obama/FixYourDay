@@ -1,11 +1,14 @@
-package spikes.fixyourday.looz.time;
+package spikes.looz.time;
+
+import java.io.Serializable;
 
 /**
  * Created by dvir on 11/12/15.
  */
-public class Time {
+public class Time implements Serializable {
 
     private Resolution res;
+
     private int time;
 
     public Time(Resolution res, int time) {
@@ -13,21 +16,27 @@ public class Time {
         this.time = time;
     }
 
+    public Resolution getRes() {
+        return res;
+    }
+
     public void setResolution(Resolution res) {
         this.res = res;
     }
 
-    public long getTime() {
+    public int getTime() {
         switch (res) {
             case HOURS:
-                return time * 3600;
-            case MINUTES:
                 return time * 60;
-            case SECONDS:
+            case MINUTES:
                 return time;
             default:
                 return 0;
         }
     }
 
+    @Override
+    public String toString() {
+        return time + " " + res;
+    }
 }

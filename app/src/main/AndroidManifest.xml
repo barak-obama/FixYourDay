@@ -17,6 +17,10 @@
         </activity>
         <activity android:name=".CreateNewScheduleActivity" >
         </activity>
+        <activity android:name=".AddTasksActivity" >
+        </activity>
+        <activity android:name=".ScheduleActivity" >
+        </activity>
     </application>
 
 </manifest>
